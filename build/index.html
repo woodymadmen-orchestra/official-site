@@ -83,6 +83,11 @@
       text-align: center;
     }
 
+    #profile {
+      width: 100%;
+      min-width: 100%;
+    }
+
     #contents {
       text-align: center;
     }
@@ -106,6 +111,12 @@
       text-align: left;
       min-height: 640px;
       font-size: 16px;
+    }
+
+    #contents article img {
+      min-width: 100%;
+      width: 100%;
+      margin: auto;
     }
 
     #contents article header {
@@ -158,17 +169,18 @@
         width: 36px;
         height: 36px;
         font-size: 36px;
+        margin: 4px;
       }
 
       #legend {
         font-size: 36px;
-        width: 50%;
+        width: 40%;
         min-width: 0px;
       }
 
       #nav {
         height: 80px;
-        width: 50%;
+        width: 60%;
         margin-top: 16px;
         padding: 16px;
         border-bottom: 1px solid rgb(0,0,0);
@@ -225,6 +237,12 @@
           </a>
         </label>
         <label>
+          <a href='https://www.youtube.com/channel/UCkSEHKktdzrB8rrKfNijj_A'>
+            <span class=laptop>Youtube</span>
+            <img class=material-icons src='./assets/youtube.svg' />
+          </a>
+        </label>
+        <label>
           <a href='mailto:info3wmo@gmail.com'>
             <span class=laptop>E-Mail</span>
             <i class="material-icons">email</i>
@@ -233,10 +251,15 @@
       </section>
     </header>
 
+    <section id=profile-image>
+      <img id=profile src='./assets/profile.jpg' />
+    </section>
+
     <section id=contents>
       <section id=contents-concert-info>
         <header>コンサート情報</header>
         <article>
+          <img src='./assets/concert-7th.jpg' />
           <header>
             Woody Madmen Orchestra 7th Concert Live - DANCE
           </header>
@@ -251,7 +274,8 @@
               <dd>無料・全席自由席</dd>
               <dt>プログラム:</dt>
               <dd>アルメニアンダンス・パート２ / A. リード</dd>
-              <dd>バレエ音楽「火の鳥」(1919年版) / ストラヴィンスキー, 他</dd>
+              <dd>バレエ音楽「火の鳥」(1919年版) / ストラヴィンスキー</dd>
+              <dd>他</dd>
             </dl>
             <p>
               世界各国、また、あらゆる時代のダンス音楽をあつめた演奏会です。
