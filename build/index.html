@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/earlyaccess/sawarabigothic.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+
     <style>
     * {
       margin: 0;
@@ -38,17 +39,20 @@
       display: flex;
     }
 
-    dl {
-    }
-
     dt {
       font-weight: bold;
     }
 
     dd {
+      margin-left: 16px;
+      font-size: 14px;
     }
 
     .tablet {
+      display: none;
+    }
+
+    .phone {
       display: none;
     }
 
@@ -164,29 +168,20 @@
         display: inline;
       }
 
+      .phone {
+        display: none;
+      }
+
       .material-icons {
         display: inline;
-        width: 36px;
-        height: 36px;
         font-size: 36px;
         margin: 4px;
       }
 
-      #legend {
-        font-size: 36px;
-        width: 40%;
-        min-width: 0px;
-      }
-
       #nav {
-        height: 80px;
-        width: 60%;
-        margin-top: 16px;
-        padding: 16px;
-        border-bottom: 1px solid rgb(0,0,0);
-        display: flex;
-        justify-content: space-around;
-        font-size: 16px;
+        height: 64px;
+        line-height: 64px;
+        padding: 0px;
       }
 
       #contents section {
@@ -205,6 +200,38 @@
     }
 
     @media screen and (max-width: 425px) {
+      .laptop {
+        display: none;
+      }
+
+      .tablet {
+        display: none;
+      }
+
+      .phone {
+        display: inline;
+      }
+
+      #legend {
+        width: 28%;
+        min-width: 0px;
+        height: 72px;
+        line-height: 20px;
+        font-size: 10px;
+        text-align: left;
+      }
+
+      #nav {
+        width: 72%;
+        margin-top: 0px;
+        padding: 16px;
+        border-bottom: 1px solid rgb(0,0,0);
+        display: flex;
+        justify-content: space-around;
+        font-size: 12px;
+        height: 72px;
+        line-height: 72px;
+      }
     }
 
     </style>
@@ -241,7 +268,8 @@
     <header id=header>
       <section id=legend>
         <h1 class=laptop>Woody Madmen Orchestra</h1>
-        <h1 class=tablet>WMO</h1>
+        <h1 class=tablet>Woody Madmen Orchestra</h1>
+        <h1 class=phone>Woody<br>&nbsp;Madmen<br>&nbsp;&nbsp;Orchestra</h1>
       </section>
 
       <section id=nav>
@@ -321,6 +349,27 @@
           <header>楽団紹介</header>
           当楽団は、東京都の各大学のOBの有志によって2010年に結成された吹奏楽団です。
           結成以来、およそ年に１回のペースでコンサート・ライブを開催しています。
+
+          <section>
+            <header>過去の演奏会</header>
+            <dl>
+              <dt>第５回コンサート・ライブ</dt>
+              <dd>2015/12/27(日) @所沢市民文化センター ミューズ アークホール</dd>
+              <dd>イーストコーストの風景、宇宙の音楽, 他</dd>
+            </dl>
+
+            <dl>
+              <dt>第６回コンサート・ライブ</dt>
+              <dd>2016/1/22(日) @ウエスタ川越 大ホール</dd>
+              <dd>ハンガリー狂詩曲、孔雀変奏曲、他</dd>
+            </dl>
+
+            <dl>
+              <dt>第７回コンサート・ライブ</dt>
+              <dd>2018/3/4(日) @練馬文化センター大ホール</dd>
+              <dd>アルメニアンダンス・パート２, バレエ音楽「火の鳥」(1919年版), 他</dd>
+            </dl>
+          </section>
         </article>
       </section>
     </section>
@@ -334,6 +383,7 @@
     <footer>
       &copy; Woody Madmen Orchestra, All rights reserved.
     </footer>
+
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script>
     $(function(){
